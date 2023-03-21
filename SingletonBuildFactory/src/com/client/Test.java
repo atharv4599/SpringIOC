@@ -15,6 +15,9 @@ public class Test {
 		BeanFactory bf = new XmlBeanFactory(r);
 		Student s = (Student) bf.getBean("s");
 		s.display();
+		Student s1 = (Student) bf.getBean("s");
+		System.out.println("First Object"+  s );
+		System.out.println("Second Object"+  s1 );
 		
 		
 	}
