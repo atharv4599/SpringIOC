@@ -15,9 +15,10 @@ public class Test {
 		// TODO Auto-generated method stub
 		ApplicationContext ac = new ClassPathXmlApplicationContext("Bean.xml");
 		Student s = (Student) ac.getBean("s");
-		Student s1 = (Student) ac.getBean("s");
+		//Student s1 = (Student) ac.getBean("s");
 		s.display();
-		s1.display();
+		
+		//s1.display();
 		
 		
 	}
