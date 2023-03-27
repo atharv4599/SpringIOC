@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="d1" class="com.main.model.Dealer">
+    <property name="dealerId" value="101"></property>
+    <property name="dealerName" value="Croma"></property>
+    <property name="dealerMob" value="7978809251"></property>
+        
+  	</bean>
+  	<bean id="s1" class="com.main.model.Supplier">
+  		<property name="supId" value="10"></property>
+  		<property name="subName" value="bk"></property>
+  		<property name="supMob" value="998809999"></property>
+  		<property name="cities">
+  			<list>
+  				<value>Pune</value>
+  			</list>
+  		</property>
+  	</bean>
+  	<bean id="pr" class="com.main.model.Product">
+  	<property name="ld">
+  		<list>
+    		<ref bean="d1"></ref>
+    	</list>
+  	
+  	</property>
+  	<property name="ms">
+    	<map>
+    		<entry key="1" value-ref="s1">
+    			
+    		</entry>
+    	</map>
+    </property>
+    	<property name="pId" value="8767"></property>
+    	<property name="pName" value="Laptop"></property>
+    	<property name="pPrice" value="45000.00"></property>
+  	</bean>
+        
+    </beans>
