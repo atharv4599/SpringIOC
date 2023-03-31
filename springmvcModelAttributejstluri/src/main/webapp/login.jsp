@@ -6,10 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>LOGIN PAGE</title>
 <style>
-body{
-	font-size: 20px;
-	font-color: yellow;
-}
+
 form:link, form:visited {
   background-color: #f44336;
   color: black;
@@ -27,11 +24,19 @@ font-size: 20px;
 	font-color: yellow;
 }
 form:hover, form:active {
-  background-color: red;
-  border-color: blue;
+  background-color: pink;
+  border-color: red;
   border: thick;
   font-size: 20px;
 	font-color: yellow;
+}
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
 }
 </style>
 </head>
@@ -43,6 +48,9 @@ form:hover, form:active {
   <label for="password">Password:</label><br>
   <input type="text" id="password" name="password" ><br><br>
   <input type="submit" value="Login">
+ 
+<a href="Register.jsp"><u>New user sign up now?</u></a>
+
   </pre>
 </form> 
  
