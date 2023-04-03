@@ -24,7 +24,6 @@ public class ControllerHome {
 			}
 		}
 		return "unf";
-
 	}
 	@RequestMapping	(value = "/register")
 	public String loginnew(@ModelAttribute User u,Model m) {
